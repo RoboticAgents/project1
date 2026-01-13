@@ -1,101 +1,101 @@
 name: project1
 
 # Checks for Week 1: Design and Planning
-- design/design.md:
-    - description: Ensure design document exists
-      check: ConfirmFileExists
-    - description: Design document has at least 500 words
-      check: CountFileWords
-      options:
-        count: 500
-        exact: false
-    - description: Design includes sketch or diagram section
-      check: MatchFileFragment
-      options:
-        fragment: "Design Sketch"
-        count: 1
-        exact: false
+design/design.md:
+  - description: Ensure design document exists
+    check: ConfirmFileExists
+  - description: Design document has at least 500 words
+    check: CountFileWords
+    options:
+      count: 500
+      exact: false
+  - description: Design includes sketch or diagram section
+    check: MatchFileFragment
+    options:
+      fragment: "Design Sketch"
+      count: 1
+      exact: false
 
-- design/components.md:
-    - description: Ensure components list exists
-      check: ConfirmFileExists
-    - description: Components document has at least 100 words
-      check: CountFileWords
-      options:
-        count: 100
-        exact: false
+design/components.md:
+  - description: Ensure components list exists
+    check: ConfirmFileExists
+  - description: Components document has at least 100 words
+    check: CountFileWords
+    options:
+      count: 100
+      exact: false
 
-- design/team-contract.md:
-    - description: Ensure team contract exists
-      check: ConfirmFileExists
-    - description: Team contract has at least 300 words
-      check: CountFileWords
-      options:
-        count: 300
-        exact: false
-    - description: Team contract includes communication section
-      check: MatchFileFragment
-      options:
-        fragment: "Communication"
-        count: 1
-        exact: false
+design/team-contract.md:
+  - description: Ensure team contract exists
+    check: ConfirmFileExists
+  - description: Team contract has at least 300 words
+    check: CountFileWords
+    options:
+      count: 300
+      exact: false
+  - description: Team contract includes communication section
+    check: MatchFileFragment
+    options:
+      fragment: "Communication"
+      count: 1
+      exact: false
 
 # Checks for Week 3: Code and Reflection
-- src/robot_control.ino:
-    - description: Ensure Arduino code file exists
-      check: ConfirmFileExists
-    - description: Code file has at least 50 lines
-      check: CountFileParagraphs
-      options:
-        count: 50
-        exact: false
-    - description: Code includes moveForward function
-      check: MatchFileFragment
-      options:
-        fragment: "void moveForward"
-        count: 1
-        exact: false
-    - description: Code includes turnLeft function
-      check: MatchFileFragment
-      options:
-        fragment: "void turnLeft"
-        count: 1
-        exact: false
-    - description: No TODO markers remain in code
-      check: MatchFileFragment
-      options:
-        fragment: "TODO"
-        count: 0
-        exact: false
+src/robot_control.ino:
+  - description: Ensure Arduino code file exists
+    check: ConfirmFileExists
+  - description: Code file has at least 50 lines
+    check: CountFileParagraphs
+    options:
+      count: 50
+      exact: false
+  - description: Code includes moveForward function
+    check: MatchFileFragment
+    options:
+      fragment: "void moveForward"
+      count: 1
+      exact: false
+  - description: Code includes turnLeft function
+    check: MatchFileFragment
+    options:
+      fragment: "void turnLeft"
+      count: 1
+      exact: false
+  - description: No TODO markers remain in code
+    check: MatchFileFragment
+    options:
+      fragment: "TODO"
+      count: 0
+      exact: false
 
-- writing/reflection.md:
-    - description: Ensure reflection document exists
-      check: ConfirmFileExists
-    - description: Reflection has at least 800 words
-      check: CountFileWords
-      options:
-        count: 800
-        exact: false
-    - description: Reflection includes technical reflection section
-      check: MatchFileFragment
-      options:
-        fragment: "Technical Reflection"
-        count: 1
-        exact: false
-    - description: Reflection includes challenges section
-      check: MatchFileFragment
-      options:
-        fragment: "Challenges and Problem Solving"
-        count: 1
-        exact: false
+writing/reflection.md:
+  - description: Ensure reflection document exists
+    check: ConfirmFileExists
+  - description: Reflection has at least 800 words
+    check: CountFileWords
+    options:
+      count: 800
+      exact: false
+  - description: Reflection includes technical reflection section
+    check: MatchFileFragment
+    options:
+      fragment: "Technical Reflection"
+      count: 1
+      exact: false
+  - description: Reflection includes challenges section
+    check: MatchFileFragment
+    options:
+      fragment: "Challenges and Problem Solving"
+      count: 1
+      exact: false
 
 # Repository quality checks
-- ..:
-    - description: Repository has at least 10 commits
-      check: CountCommits
-      options:
-        count: 10
-    - description: Repository has at least 3 commits in the last week
-      check: CountCommits
-      options:
-        count: 3
+..:
+  - description: Repository has at least 10 commits
+    check: CountCommits
+    options:
+      count: 10
+  - description: Repository has at least 3 commits in the last week
+    check: CountCommits
+    options:
+      count: 3

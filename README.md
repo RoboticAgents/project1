@@ -261,14 +261,12 @@ For each teammate (including yourself), rate on a scale of 1-5:
 **Part 2: Self-Reflection**
 
 **Your Contributions:**
-- List specific tasks you completed (e.g., "designed chassis in CAD," "wired motor driver," "wrote movement functions") and estimate hours spent on the project
+- List specific tasks you completed and estimate hours spent on the project
+- Were there any circumstances that affected your ability to contribute?
 
 **Honest Assessment:**
 
-- Rate your own communication, timeliness, and collaboration (1-5)
-- Did you contribute your fair share? (Yes/No and explanation)
-- Were there any circumstances that affected your ability to contribute?
-- What are you most proud of from this project?
+- Rate your own communication, timeliness, work quality, collaboration, contribution, and reliability (1-5)
 
 ## Resources
 
@@ -283,11 +281,12 @@ For each teammate (including yourself), rate on a scale of 1-5:
 
 ### Motor Control
 - [PWM Tutorial](https://www.arduino.cc/en/Tutorial/Foundations/PWM)
-- [H-Bridge Motor Driver Explained](https://www.instructables.com/H-Bridge-Motor-Driver/)
+- [Understanding Motor Drivers](https://learn.sparkfun.com/tutorials/motors-and-selecting-the-right-one)
+- [TB6612FNG Motor Driver Tutorial](https://learn.sparkfun.com/tutorials/tb6612fng-hookup-guide)
 
 ### Example Projects (for inspiration only)
 - [Simple Arduino Robot](https://www.instructables.com/Simple-Arduino-Robot/)
-- [Differential Drive Robot](https://howtomechatronics.com/projects/arduino-robot-car/)
+- Search for Arduino 2WD Robot Car at [projecthub](https://projecthub.arduino.cc/)
 
 ## Submission Instructions
 
@@ -300,7 +299,7 @@ Submit via your team's GitHub repository:
 - [Peer and self-evaluation form](https://forms.gle/iajX2RxXz7Z41jnV6)
 
 ### Presentation and Code Review (February 3)
-- Bring your robot to lab, fully charged and ready to demonstrate
+- Bring your robot to lab, ready to demonstrate
 - Be prepared to explain your design choices and challenges
 - Each team will have 5 minutes to present + 2 minutes for Q&A
 - During the remainder of the lab on February 3rd and class on February 4th, each individual will have a ~5 minute code review with the instructor where you will:

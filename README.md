@@ -74,9 +74,9 @@ By completing this project, you will be able to:
 ### Week 1: Design and Planning (Due January 16 and 20)
 
 **Deliverables:**
-- Robot design document (see `design/design.md`, **Due January 20 by 2:30PM**)
 - Component request list (see `design/components.md`, **Due January 16 by 11:59PM**)
 - Team contract (see `design/team-contract.md`, **Due January 16 by 11:59PM**)
+- Robot design document (see `design/design.md`, **Due January 20 by 2:30PM**)
 
 **Tasks:**
 1. Research wheeled robot designs (differential drive, skid-steer, etc.)
@@ -96,13 +96,12 @@ By completing this project, you will be able to:
 1. Assemble the chassis and mount motors
 2. Wire the motor driver to the Arduino
 3. Wire the power system (battery + switch)
-4. Test individual motor function with simple code (optional)
+4. Test individual motor function with simple code 
 5. Debug wiring issues and document solutions
 
 **Check-in (January 27 Lab):**
 - Demonstrate completed build of the robot
-- Demonstrate that both motors can spin forward and backward (optional)
-- Show your wiring diagram
+- Demonstrate basic functionality of the motors (e.g, default code runs)
 - Discuss any challenges or design changes
 
 ### Week 3: Programming and Autonomy (Due February 3)
@@ -119,7 +118,7 @@ By completing this project, you will be able to:
 2. Implement at least one autonomous behavior (timed routine, sensor-based, etc.)
 3. Test and refine robot performance
 4. Document your code with comments
-5. Complete peer and self-evaluation form
+5. Complete [peer and self-evaluation form](https://forms.gle/iajX2RxXz7Z41jnV6)
 6. Give demonstration to class on February 3rd
 
 **Final Demonstration (February 3 Lab and February 4 Class):**
@@ -132,8 +131,6 @@ By completing this project, you will be able to:
 ### Mechanical Requirements
 
 - **Locomotion:** Two-wheel differential drive (minimum)
-  - Two powered wheels on parallel axes
-  - One passive caster or skid for stability
 - **Chassis:** Any material (acrylic, wood, 3D-printed, etc.)
 - **Stability:** Robot must not tip over during normal operation
 
@@ -143,16 +140,14 @@ By completing this project, you will be able to:
 - **Motor Driver:** H-bridge motor driver 
 - **Power:** Separate power for motors
   - **Critical:** Motors MUST NOT be powered from Arduino 5V pin
-  - All grounds must be connected (common ground)
 
 ### Software Requirements
 
 - **Language:** Arduino C/C++ (or MicroPython for Pico)
 - **Behaviors (minimum):**
-  1. Move forward for a specified distance/time
-  2. Move backward
-  3. Turn left and right
-  4. Execute one autonomous routine (e.g., square pattern, obstacle avoidance)
+  1. Move forward and backward for a specified distance
+  2. Turn left and right
+  3. Execute one autonomous routine 
 - **Code Quality:**
   - Well-commented code
   - Modular functions (not one giant `loop()`)
@@ -236,8 +231,7 @@ After calculating your base score (Team Product + Code Review = up to 8 points),
 - **Minor penalty (−0.5 to −1 pts):** Good peer reviews (3.5–4.4 avg), minor contribution concerns
 - **Moderate penalty (−1.5 to −3 pts):** Adequate peer reviews (2.5–3.4 avg), clear contribution deficits
 - **Major penalty (−3.5 to −5 pts):** Poor peer reviews (1.5–2.4 avg), minimal contribution
-- **Severe penalty (−6 to −8 pts):** Very poor peer reviews (<1.5 avg), non-participation
-- Non-participant: 6.5 + 0 − 6.5 = **0/8**
+- **Severe penalty (−6 to −8 pts):** Very poor peer reviews (<1.5 avg), non-participation (-8 pts)
 
 ### Extra Credit (up to 0.5 points)
 - Sensor integration and advanced autonomous behaviors (0.3 pts)
@@ -263,24 +257,16 @@ For each teammate (including yourself), rate on a scale of 1-5:
 6. **Reliability:** Could you depend on them to follow through on commitments?
 
 **Open-ended questions:**
-- What were this teammate's most valuable contributions?
-- What could this teammate have done better?
 - Would you want to work with this teammate again? Why or why not?
 
 **Part 2: Self-Reflection**
 
 **Your Contributions:**
-- List specific tasks you completed (e.g., "designed chassis in CAD," "wired motor driver," "wrote movement functions")
-- Estimate hours spent on the project
-- Rate your own communication, timeliness, and collaboration (1-5)
-
-**Learning and Growth:**
-- What was your biggest technical learning from this project?
-- What did you learn about teamwork?
-- What would you do differently next time?
-- How did you handle challenges or disagreements?
+- List specific tasks you completed (e.g., "designed chassis in CAD," "wired motor driver," "wrote movement functions") and estimate hours spent on the project
 
 **Honest Assessment:**
+
+- Rate your own communication, timeliness, and collaboration (1-5)
 - Did you contribute your fair share? (Yes/No and explanation)
 - Were there any circumstances that affected your ability to contribute?
 - What are you most proud of from this project?
@@ -312,7 +298,7 @@ Submit via your team's GitHub repository:
 - **February 3rd, by 2:30PM:** Push final code to `src/` and reflection to `writing/`
 
 **Additionally, by February 3rd 2:30PM each team member must complete:**
-- Peer and self-evaluation form (Google Form link provided separately)
+- [Peer and self-evaluation form](https://forms.gle/iajX2RxXz7Z41jnV6)
 
 ### Presentation and Code Review (February 3)
 - Bring your robot to lab, fully charged and ready to demonstrate

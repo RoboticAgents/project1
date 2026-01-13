@@ -31,7 +31,7 @@ What are your design priorities? (e.g., simplicity, speed, stability, aesthetics
 - **Mounting Plan:** How will components be attached?
 
 ### 2.3 Design Sketch
-Include a hand-drawn or CAD sketch of your robot. Label key components:
+Include a sketch of your robot (hand-drawn is fine). Label key components:
 - Motors
 - Wheels
 - Arduino
@@ -52,14 +52,12 @@ Include a hand-drawn or CAD sketch of your robot. Label key components:
 - **Power Switch Location:**
 
 ### 3.2 Motor Selection
-- **Motor Type:** (e.g., yellow TT motor, Pololu micro metal gear motor)
+- **Motor Type:** (e.g., yellow DC gear motor, micro metal gear motor)
 - **Voltage Rating:**
-- **Estimated RPM:**
-- **Torque Requirements:** Why did you choose these motors?
+- **Estimated RPM (revolutions per minute):**
 
 ### 3.3 Motor Driver
-- **Driver Model:** (TB6612FNG or L298N)
-- **Justification:** Why this driver?
+- **Driver Model:** 
 
 ### 3.4 Wiring Plan
 Describe how you will connect:
@@ -134,53 +132,10 @@ If your primary design doesn't work, what is your Plan B?
 
 Break down your work into weekly goals:
 
-**Week 1 (by January 19):**
-- Complete design document
-- Receive hardware kit
-- Begin chassis construction
+**Week 1 (by January 20):**
 
-**Week 2 (by January 26):**
-- Finish mechanical assembly
-- Complete wiring
-- Test individual motor control
+**Week 2 (by January 27):**
 
 **Week 3 (by February 3):**
-- Implement all required behaviors
-- Test and debug
-- Create demonstration video
-- Prepare presentation
 
----
 
-## 8. Team Roles
-
-Assign initial responsibilities (note: these may change as the project progresses):
-
-| Team Member | Primary Responsibilities |
-|-------------|-------------------------|
-| Name 1      | (e.g., mechanical design, CAD) |
-| Name 2      | (e.g., wiring, electrical) |
-| Name 3      | (e.g., programming, testing) |
-
-**Note:** All team members must contribute to all aspects, but these are initial focus areas.
-
----
-
-## 9. Resources and References
-
-List any tutorials, datasheets, or example projects you consulted:
-- 
-- 
-- 
-
----
-
-## Instructor Feedback (to be completed during Week 1 check-in)
-
-**Design Feasibility:**
-
-**Component Requests Approved?**
-
-**Recommendations:**
-
-**Approval Signature:** ________________  **Date:** __________

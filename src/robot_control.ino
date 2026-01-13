@@ -4,7 +4,6 @@
  * Project 1: Engineering a Wheeled Robot
  * Team Name: [Your Team Name]
  * Team Members: [Names]
- * Date: January 2026
  * 
  * Description:
  * This program controls a differential drive robot with two motors.

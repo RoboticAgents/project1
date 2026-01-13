@@ -4,31 +4,44 @@
 
 ## Timeline
 
-- **Assigned:** January 12, 2026
-- **Due:** February 3, 2026 (11:59 PM)
+- **Assigned:** January 13, 2026
+- **Due:** February 3, 2026 (2:30 PM)
 - **Duration:** 3 weeks with weekly check-ins
 
 ## Overview
 
 In this project, you will design, build, and program a wheeled robot from scratch. This is an **open-ended design challenge** where you and your team will make engineering decisions about the robot's form, function, and behavior. By the end of this project, you will have a programmable, autonomous robot that demonstrates core robotics principles including **locomotion, kinematics, forces, and actuation**.
 
-This project bridges theory and practice—as you build, we will explore related concepts in class, including:
+This project bridges theory and practice. As you build, we will explore related concepts in class, including:
 - **Locomotion:** How robots move through space
 - **Kinematics:** The mathematics of motion (position, velocity, orientation)
 - **Forces and Dynamics:** How motors generate force and torque
 - **Actuation:** Converting electrical signals into physical motion
 
-## Learning Objectives
+## Learning Outcomes
 
 By completing this project, you will be able to:
 
-1. **Design** a functional wheeled robot given real-world constraints (cost, time, materials)
-2. **Apply** principles of locomotion, kinematics, and actuation to a physical system
-3. **Integrate** mechanical, electrical, and software components into a working system
-4. **Program** an Arduino-based controller to produce autonomous behavior
-5. **Debug** hardware and software issues in an embedded system
-6. **Collaborate** effectively in a small engineering team
-7. **Document** design decisions, failures, and insights
+1. **Design** a functional wheeled robot given real-world constraints (cost, time, materials)  
+   *Fulfills Course Learning Outcome 2*
+
+2. **Apply** principles of locomotion, kinematics, and actuation to a physical system  
+   *Fulfills Course Learning Outcomes 1, 4*
+
+3. **Integrate** mechanical, electrical, and software components into a working system  
+   *Fulfills Course Learning Outcome 1*
+
+4. **Program** an Arduino-based controller to produce autonomous behavior  
+   *Fulfills Course Learning Outcome 2*
+
+5. **Debug** hardware and software issues in an embedded system  
+   *Fulfills Course Learning Outcome 2*
+
+6. **Collaborate** effectively in a small engineering team  
+   *Fulfills Course Learning Outcome 2*
+
+7. **Document** design decisions, failures, and insights  
+   *Fulfills Course Learning Outcome 2*
 
 ## Team Structure
 
@@ -40,42 +53,37 @@ By completing this project, you will be able to:
 
 ## Project Phases and Weekly Check-ins
 
-### Week 1: Design and Planning (Due January 20)
+### Week 1: Design and Planning (Due January 16 and 20)
 
 **Deliverables:**
-- Robot design document (see `design/design.md`)
-- Component request list (see `design/components.md`)
-- Team contract (see `design/team-contract.md`)
+- Robot design document (see `design/design.md`, **Due January 20**)
+- Component request list (see `design/components.md`, **Due January 16**)
+- Team contract (see `design/team-contract.md`, **Due January 16**)
 
 **Tasks:**
 1. Research wheeled robot designs (differential drive, skid-steer, etc.)
-2. Sketch your robot design (hand-drawn or CAD)
+2. Sketch your robot design (hand-drawn is fine)
 3. List all components you need from the baseline kit + any additions
 4. Define success criteria: What should your robot be able to do?
 5. Assign initial team roles
 
-**Check-in (Week 1 Lab):**
-- Present your design to the instructor for feedback
-- Submit component request list for approval
-- Receive your hardware kit
-
-### Week 2: Building and Wiring (Due January 26)
+### Week 2: Building and Wiring (Due January 27)
 
 **Deliverables:**
 - Assembled robot chassis with motors and wheels
 - Wired motor driver and Arduino
-- Documentation of build process (see `build/build-log.md`)
-- Photos of your robot in progress
+- Demonstration of your robot in progress
 
 **Tasks:**
 1. Assemble the chassis and mount motors
 2. Wire the motor driver to the Arduino
 3. Wire the power system (battery + switch)
-4. Test individual motor function with simple code
+4. Test individual motor function with simple code (optional)
 5. Debug wiring issues and document solutions
 
-**Check-in (Week 2 Lab):**
-- Demonstrate that both motors can spin forward and backward
+**Check-in (January 27 Lab):**
+- Demonstrate completed build of the robot
+- Demonstrate that both motors can spin forward and backward (optional)
 - Show your wiring diagram
 - Discuss any challenges or design changes
 
@@ -85,19 +93,21 @@ By completing this project, you will be able to:
 - Complete, functional robot
 - Arduino program with multiple behaviors
 - Reflection document (see `writing/reflection.md`)
-- Final presentation video (2–3 minutes)
+- Peer and self-evaluation form (Google Form)
+- Final demonstration
 
 **Tasks:**
 1. Write Arduino code for basic motion (forward, backward, turn)
 2. Implement at least one autonomous behavior (timed routine, sensor-based, etc.)
 3. Test and refine robot performance
 4. Document your code with comments
-5. Create a video demonstration
+5. Complete peer and self-evaluation form
+6. Give demonstration to class on February 3rd
 
-**Final Demonstration (Week 3 Lab):**
+**Final Demonstration (February 3 Lab and February 4 Class):**
 - Live demo of your robot performing autonomous behavior
-- 5-minute team presentation covering design, challenges, and lessons learned
-- **Individual code reviews** scheduled during lab or office hours (10-15 minutes per person)
+- During the demo each team must also cover design, challenges, and lessons learned
+- **Individual code reviews** during lab on February 3rd and class on February 4th (5 minutes per person)
 
 ## Technical Requirements
 
@@ -112,8 +122,8 @@ By completing this project, you will be able to:
 ### Electrical Requirements
 
 - **Microcontroller:** Arduino Uno or Raspberry Pi Pico 2
-- **Motor Driver:** H-bridge motor driver (TB6612FNG or L298N)
-- **Power:** Separate power for motors (battery pack, 6–9V)
+- **Motor Driver:** H-bridge motor driver 
+- **Power:** Separate power for motors
   - **Critical:** Motors MUST NOT be powered from Arduino 5V pin
   - All grounds must be connected (common ground)
 - **Safety:** Power switch to disconnect battery
@@ -131,12 +141,11 @@ By completing this project, you will be able to:
   - Modular functions (not one giant `loop()`)
   - Version controlled via Git
 
-### Optional Extensions (Extra Credit)
+### Optional Extensions 
 
 - Add sensors (ultrasonic, IR line follower, etc.)
 - Implement closed-loop control (encoders for accurate distance)
 - Advanced behaviors (wall following, line following, maze solving)
-- Custom 3D-printed or laser-cut chassis
 
 ## Baseline Hardware Kit
 
@@ -150,75 +159,71 @@ Each team will receive the following components:
 - 2× Wheels (65–70 mm diameter)
 - 1× Ball caster or swivel caster
 
-### Power System
-- 1× 4×AA battery holder
-- 4× AA rechargeable batteries (NiMH)
-- 1× Power switch
-
-### Chassis and Hardware
-- 1× Acrylic or plywood chassis plate (or material for custom build)
-- Motor mounting brackets
-- Assorted screws, nuts, standoffs (M3 hardware)
-
-### Wiring and Prototyping
-- 1× Half-size breadboard
-- 20× Jumper wires (assorted male-male and male-female)
-- 5× Zip ties
-
-### Debugging Tools
-- 2× LEDs (red/green)
-- 2× 220Ω resistors
-
 **Additional components may be requested in your design document, subject to instructor approval.**
 
 ## Assessment Rubric
 
 **Total: 8 points** (part of 40 points for all projects)
 
-Your grade will be a combination of **team product evaluation** (80%) and **individual contribution assessment** (20%).
+**Your grade = (Team Product Score + Code Review Score) − Contribution Penalty**
 
-### Team Product Evaluation (6.4 points)
+### Team Product Evaluation (6.5 points)
 
-#### Design and Planning (1.5 points)
-- [ ] Design document completeness and feasibility (0.8 pts)
-- [ ] Component list with justifications (0.4 pts)
-- [ ] Team contract established (0.3 pts)
+All team members start with the same team product score.
+
+#### Design and Planning (1.0 point)
+- [ ] Design document completeness and feasibility (0.5 pts)
+- [ ] Component list with justifications (0.3 pts)
+- [ ] Team contract established (0.2 pts)
 
 #### Build Quality (2.0 points)
-- [ ] Mechanical assembly and stability (1.0 pt)
-- [ ] Wiring quality and safety (0.8 pts)
-- [ ] Build documentation and photos (0.2 pts)
+- [ ] Mechanical assembly and stability (1.1 pts)
+- [ ] Wiring quality and safety (0.9 pts)
 
-#### Demonstration and Functionality (2.0 points)
-- [ ] Robot performs all required behaviors (1.2 pts)
-- [ ] Team presentation quality (0.5 pts)
-- [ ] Video demonstration (0.3 pts)
+#### Code Quality (1.5 points)
+- [ ] Code organization and modularity (0.4 pts)
+- [ ] Code documentation and comments (0.3 pts)
+- [ ] Autonomous behavior implementation (0.8 pts)
+
+#### Demonstration (2.0 points)
+- [ ] Robot performs all required behaviors during the demonstration (1.2 pts)
+- [ ] Team demonstration covers design, challenges, and lessons learned (0.8 pts)
 
 #### Documentation (0.9 points)
-- [ ] Build log completeness (0.3 pts)
-- [ ] Reflection quality and insights (0.4 pts)
+- [ ] Reflection quality and insights (0.7 pts)
 - [ ] Git usage (regular commits, clear messages) (0.2 pts)
 
-### Individual Contribution Assessment (1.6 points)
+### Code Review/Technical Interview (1.5 points)
 
-Your individual grade will be based on:
-- **Code Review/Technical Interview (1.0 pt):** Individual meeting with instructor where you will:
-  - Explain your code contributions
-  - Demonstrate understanding of motor control, electronics, and wiring
-  - Answer questions about mechanical design decisions
-  - Show knowledge of debugging approaches used
-  
-- **Peer Evaluation (0.3 pts):** Feedback from teammates on:
-  - Communication and collaboration
-  - Meeting deadlines and commitments
-  - Quality and quantity of contributions
-  - Reliability and accountability
-  
-- **Self-Reflection (0.3 pts):** Your honest assessment of:
-  - Your specific contributions to the project
-  - What you learned
-  - What you would do differently
-  - How well you collaborated
+Individual meeting with instructor where you will:
+- Explain your code contributions and design decisions
+- Demonstrate understanding of motor control, electronics, and wiring
+- Answer questions about mechanical design decisions
+- Show knowledge of debugging approaches used
+
+**Scoring:**
+- **1.35–1.5 pts:** Deep understanding, can explain all components, clear significant contributions
+- **1.1–1.3 pts:** Solid understanding, can explain most aspects, fair contribution
+- **0.75–1.0 pts:** Basic understanding, some gaps in knowledge or contribution
+- **0.4–0.7 pts:** Minimal understanding, cannot explain contributions adequately
+- **0 pts:** Did not participate or attend code review
+
+### Peer Evaluation & Contribution Penalty (0 to −6 points)
+
+After calculating your base score (Team Product + Code Review = up to 8 points), a penalty is applied based on peer evaluations and contribution evidence.
+
+**Penalty determined by:**
+- Peer evaluation feedback (communication, collaboration, reliability, contribution quality)
+- Git commit history showing documented contributions
+- Self-reflection quality and alignment with peer feedback
+
+**Penalty levels:**
+- **No penalty (0 pts deducted):** Excellent peer reviews (4.5–5.0 avg), strong evidence of equal contribution
+- **Minor penalty (−0.5 to −1 pts):** Good peer reviews (3.5–4.4 avg), minor contribution concerns
+- **Moderate penalty (−1.5 to −3 pts):** Adequate peer reviews (2.5–3.4 avg), clear contribution deficits
+- **Major penalty (−3.5 to −5 pts):** Poor peer reviews (1.5–2.4 avg), minimal contribution
+- **Severe penalty (−6 to −8 pts):** Very poor peer reviews (<1.5 avg), non-participation
+- Non-participant: 6.5 + 0 − 6.5 = **0/8**
 
 ### Extra Credit (up to 0.5 points)
 - Sensor integration and advanced autonomous behaviors (0.3 pts)
@@ -228,11 +233,13 @@ Your individual grade will be based on:
 
 ## Team Evaluation Process
 
-### Peer Evaluation (Due with Final Submission)
+### Peer and Self-Evaluation Form (Due with Final Submission)
 
-Each team member will complete a **confidential peer evaluation form** (Google Form link will be provided) that assesses:
+Each team member will complete a **combined peer and self-evaluation form** (Google Form) that includes:
 
-**For each teammate (including yourself), rate on a scale of 1-5:**
+**Part 1: Peer Evaluation**
+
+For each teammate (including yourself), rate on a scale of 1-5:
 
 1. **Communication:** Did they communicate actively and keep the team updated?
 2. **Timeliness:** Did they complete work on time and not push tasks to the last minute?
@@ -246,9 +253,7 @@ Each team member will complete a **confidential peer evaluation form** (Google F
 - What could this teammate have done better?
 - Would you want to work with this teammate again? Why or why not?
 
-### Self-Reflection (Due with Final Submission)
-
-Each team member will also complete a **self-reflection form** (separate Google Form) that includes:
+**Part 2: Self-Reflection**
 
 **Your Contributions:**
 - List specific tasks you completed (e.g., "designed chassis in CAD," "wired motor driver," "wrote movement functions")
@@ -265,16 +270,6 @@ Each team member will also complete a **self-reflection form** (separate Google 
 - Did you contribute your fair share? (Yes/No and explanation)
 - Were there any circumstances that affected your ability to contribute?
 - What are you most proud of from this project?
-
-### How Individual Grades Are Determined
-
-The instructor will consider:
-1. **Code Review Performance:** Can you explain the technical decisions and demonstrate understanding?
-2. **Peer Evaluation Scores:** What did your teammates say about your contributions?
-3. **Self-Reflection:** Does your self-assessment align with team feedback and documented contributions?
-4. **Evidence in Repository:** Git commits, documentation, photos showing your work
-
-**Note:** If there is a significant discrepancy in contributions (e.g., one team member did much less work), individual grades may be adjusted accordingly. Most teams where everyone contributes will receive the same individual score.
 
 ## Resources
 
@@ -297,41 +292,19 @@ The instructor will consider:
 
 ## Submission Instructions
 
-### Weekly Check-ins
+### Deadlines
 Submit via your team's GitHub repository:
-- **Week 1:** Push design documents to `design/` folder
-- **Week 2:** Push build log and photos to `build/` folder
-- **Week 3:** Push final code to `src/` and reflection to `writing/`
+- **Week 1:** Push design documents to `design/` folder (`components.md` and `team-contract.md` due by 11:59PM on January 16th, `design.md` due by 2:30PM on January 20th)
+- **February 3rd, by 2:30PM:** Push final code to `src/` and reflection to `writing/`
 
-### Final Submission (Due February 3, 11:59 PM)
-Your repository should contain:
-```
-project1/
-├── design/
-│   ├── design.md
-│   ├── components.md
-│   └── team-contract.md
-├── build/
-│   ├── build-log.md
-│   └── photos/
-├── src/
-│   ├── robot_control.ino (or main.py)
-│   └── README.md
-├── writing/
-│   └── reflection.md
-└── video/
-    └── demo.mp4 (or link to YouTube/Drive)
-```
+**Additionally, by February 3rd 2:30PM each team member must complete:**
+- Peer and self-evaluation form (Google Form link provided separately)
 
-**Additionally, each team member must complete:**
-- Peer evaluation form (Google Form link provided separately)
-- Self-reflection form (Google Form link provided separately)
-
-### Presentation and Code Review (February 3-7)
+### Presentation and Code Review (February 3)
 - Bring your robot to lab, fully charged and ready to demonstrate
 - Be prepared to explain your design choices and challenges
 - Each team will have 5 minutes to present + 2 minutes for Q&A
-- **Each individual** will schedule a 10-15 minute code review with the instructor where you will:
+- During the remainder of the lab on February 3rd and class on February 4th, each individual will have a 5 minute code review with the instructor where you will:
   - Walk through your code contributions
   - Explain how motors and motor drivers work
   - Describe your wiring and power system
@@ -340,15 +313,13 @@ project1/
 
 ## Academic Integrity
 
-- You may discuss general concepts with other teams, but **all design and code must be your own**
 - Cite any external resources, tutorials, or code snippets you use
-- Do not copy code from the internet without understanding and attribution
-- Collaboration within your team is encouraged; collaboration across teams is not
+- Do not copy code from the internet or LLM without understanding and attribution
 
 ## Getting Help
 
 - **Office Hours:** See course syllabus
-- **Lab Sessions:** Use lab time to work with your team and get real-time help
+- **Lab/Class Sessions:** Use lab and dedicated class time to work with your team and get real-time help
 - **Debugging Tips:** Document your issue before asking for help (what you tried, what error you see)
 - **Hardware Issues:** If a component is defective, notify the instructor immediately
 
@@ -362,43 +333,6 @@ project1/
 4. **Disconnect** power when making wiring changes
 5. **Avoid** short circuits—double-check connections
 6. **Use** appropriate voltage for your motors (6–9V typical)
-
----
-
-## Frequently Asked Questions
-
-**Q: Can we choose our own teammates?**  
-A: Yes! You may select your own team of 2-3 students.
-
-**Q: How will individual contributions be evaluated?**  
-A: Through a combination of code review (1-on-1 with instructor), peer evaluations from teammates, your self-reflection, and evidence in the Git repository. Most teams where everyone contributes fairly will receive the same individual grade.
-
-**Q: What happens if someone on my team doesn't contribute?**  
-A: Document this in your peer evaluation. The instructor will review all evaluations and may adjust individual grades. It's important to communicate with your teammate first and notify the instructor early if there are serious issues.
-
-**Q: Will the peer evaluations be anonymous?**  
-A: Peer evaluations are confidential (only the instructor sees them), but not anonymous to the instructor. Your feedback helps ensure fair grading.
-
-**Q: What should I expect in the code review?**  
-A: A 10-15 minute one-on-one conversation where you explain your code, demonstrate understanding of the electronics and mechanics, and answer questions about your design decisions. This is not meant to be stressful—it's a chance to show what you learned!
-
-**Q: Can we use a different microcontroller?**  
-A: Arduino Uno or Raspberry Pi Pico 2 only for this project. Other boards may not be compatible with our hardware.
-
-**Q: What if a component breaks?**  
-A: Notify the instructor immediately. We have spare parts, but document the failure in your build log.
-
-**Q: Can we use materials from home?**  
-A: Yes! You may supplement the kit with your own materials (cardboard, LEGO, 3D prints, etc.), but the core electronics must be from the provided kit.
-
-**Q: How complex should the autonomous behavior be?**  
-A: Minimum: timed movement (e.g., drive in a square). Better: sensor-based (e.g., stop before hitting a wall). Best: adaptive behavior (e.g., wall following, line following).
-
-**Q: Can we work alone?**  
-A: No. This is a team project. Solo work is only allowed with instructor permission in exceptional circumstances.
-
-**Q: What defines a successful teammate?**  
-A: Based on your feedback: Someone who communicates actively, completes work on time, puts in genuine effort, is open to discussion and compromise, and does their fair share without pushing work to the last minute.
 
 ---
 

@@ -4,7 +4,6 @@
 
 ## Table of Contents
 
-- [Timeline](#timeline)
 - [Overview](#overview)
 - [Learning Outcomes](#learning-outcomes)
 - [Team Structure](#team-structure)
@@ -110,7 +109,7 @@ By completing this project, you will be able to:
 - Complete, functional robot
 - Arduino program with multiple behaviors
 - Reflection document (see `writing/reflection.md`)
-- Peer and self-evaluation form (Google Form)
+- [Peer and self-evaluation form](https://forms.gle/iajX2RxXz7Z41jnV6)
 - Final demonstration
 
 **Tasks:**

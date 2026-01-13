@@ -87,12 +87,7 @@
         exact: false
 
 # Repository quality checks
-- ..:
-    - description: Repository has at least 10 commits
-      check: CountCommits
-      options:
-        count: 10
-    - description: Repository has at least 3 commits in the last week
-      check: CountCommits
-      options:
-        count: 3
+- description: Repository has at least 10 commits
+  check: CountCommits
+  options:
+    count: 10

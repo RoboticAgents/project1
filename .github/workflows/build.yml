@@ -1,0 +1,132 @@
+name: Project Documentation Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  check-documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Check required files exist
+      run: |
+        echo "Checking for required project files..."
+        
+        # Week 1 Design Files
+        if [ ! -f "design/design.md" ]; then
+          echo "❌ Missing: design/design.md"
+          exit 1
+        else
+          echo "✓ Found: design/design.md"
+        fi
+        
+        if [ ! -f "design/components.md" ]; then
+          echo "❌ Missing: design/components.md"
+          exit 1
+        else
+          echo "✓ Found: design/components.md"
+        fi
+        
+        if [ ! -f "design/team-contract.md" ]; then
+          echo "❌ Missing: design/team-contract.md"
+          exit 1
+        else
+          echo "✓ Found: design/team-contract.md"
+        fi
+        
+        # Week 2 Build Files
+        if [ ! -f "build/build-log.md" ]; then
+          echo "❌ Missing: build/build-log.md"
+          exit 1
+        else
+          echo "✓ Found: build/build-log.md"
+        fi
+        
+        # Week 3 Code Files
+        if [ ! -f "src/robot_control.ino" ] && [ ! -f "src/main.py" ]; then
+          echo "❌ Missing: src/robot_control.ino or src/main.py"
+          exit 1
+        else
+          echo "✓ Found: Source code file"
+        fi
+        
+        # Week 3 Reflection
+        if [ ! -f "writing/reflection.md" ]; then
+          echo "❌ Missing: writing/reflection.md"
+          exit 1
+        else
+          echo "✓ Found: writing/reflection.md"
+        fi
+        
+        echo ""
+        echo "✅ All required documentation files found!"
+        
+    - name: Check for TODO markers in code
+      run: |
+        echo "Checking for incomplete TODO items in code..."
+        if grep -r "TODO" src/ 2>/dev/null; then
+          echo "⚠️  Found TODO markers in code - make sure to complete them!"
+        else
+          echo "✓ No TODO markers found"
+        fi
+        
+    - name: Validate markdown files
+      run: |
+        echo "Checking markdown files for basic structure..."
+        
+        # Check if design.md has required sections
+        if ! grep -q "## 1. Design Overview" design/design.md; then
+          echo "⚠️  design.md may be missing required sections"
+        fi
+        
+        if ! grep -q "## 2. Mechanical Design" design/design.md; then
+          echo "⚠️  design.md may be missing mechanical design section"
+        fi
+        
+        # Check if reflection has content
+        REFLECTION_LINES=$(wc -l < writing/reflection.md)
+        if [ "$REFLECTION_LINES" -lt 50 ]; then
+          echo "⚠️  reflection.md seems short - make sure to complete all sections"
+        else
+          echo "✓ Reflection appears complete"
+        fi
+        
+        echo "✅ Markdown validation complete!"
+        
+    - name: Check for build photos
+      run: |
+        echo "Checking for build photos..."
+        PHOTO_COUNT=$(find build/photos -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" \) 2>/dev/null | wc -l)
+        
+        if [ "$PHOTO_COUNT" -eq 0 ]; then
+          echo "⚠️  No photos found in build/photos/ directory"
+          echo "   Remember to add photos of your robot!"
+        else
+          echo "✓ Found $PHOTO_COUNT photo(s) in build/photos/"
+        fi
+        
+    - name: Project status summary
+      run: |
+        echo ""
+        echo "================================"
+        echo "PROJECT STATUS SUMMARY"
+        echo "================================"
+        echo ""
+        echo "Week 1 (Design): Complete"
+        echo "Week 2 (Build):  Check build-log.md"
+        echo "Week 3 (Code):   Check src/ directory"
+        echo ""
+        echo "Remember to:"
+        echo "  1. Update your build log regularly"
+        echo "  2. Add photos of your robot"
+        echo "  3. Test your code before final submission"
+        echo "  4. Complete all TODO items"
+        echo "  5. Record your demonstration video"
+        echo ""
+        echo "================================"

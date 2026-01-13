@@ -97,7 +97,7 @@ void loop() {
   // TODO: Implement your autonomous behavior here
   // Example: Drive in a square pattern
   
-  driveSquare();
+  // Add your code here
   
   // Stop and wait
   stopMotors();
@@ -127,24 +127,6 @@ void moveForward(int speed) {
 }
 
 /**
- * Move both motors backward
- * @param speed: PWM value (0-255)
- */
-void moveBackward(int speed) {
-  Serial.println("Moving Backward");
-  
-  // Right motor backward
-  digitalWrite(MOTOR_A_IN1, LOW);
-  digitalWrite(MOTOR_A_IN2, HIGH);
-  analogWrite(MOTOR_A_PWM, speed);
-  
-  // Left motor backward
-  digitalWrite(MOTOR_B_IN1, LOW);
-  digitalWrite(MOTOR_B_IN2, HIGH);
-  analogWrite(MOTOR_B_PWM, speed);
-}
-
-/**
  * Turn left (left motor slower or stopped, right motor forward)
  * @param speed: PWM value (0-255)
  */
@@ -167,82 +149,8 @@ void turnLeft(int speed) {
   // analogWrite(MOTOR_B_PWM, speed);
 }
 
-/**
- * Turn right (right motor slower or stopped, left motor forward)
- * @param speed: PWM value (0-255)
- */
-void turnRight(int speed) {
-  Serial.println("Turning Right");
-  
-  // Right motor stopped
-  digitalWrite(MOTOR_A_IN1, LOW);
-  digitalWrite(MOTOR_A_IN2, LOW);
-  analogWrite(MOTOR_A_PWM, 0);
-  
-  // Left motor forward
-  digitalWrite(MOTOR_B_IN1, HIGH);
-  digitalWrite(MOTOR_B_IN2, LOW);
-  analogWrite(MOTOR_B_PWM, speed);
-  
-  // For pivot turn (right motor backward), uncomment:
-  // digitalWrite(MOTOR_A_IN1, LOW);
-  // digitalWrite(MOTOR_A_IN2, HIGH);
-  // analogWrite(MOTOR_A_PWM, speed);
-}
-
-/**
- * Stop both motors
- */
-void stopMotors() {
-  Serial.println("Stopping");
-  
-  digitalWrite(MOTOR_A_IN1, LOW);
-  digitalWrite(MOTOR_A_IN2, LOW);
-  analogWrite(MOTOR_A_PWM, 0);
-  
-  digitalWrite(MOTOR_B_IN1, LOW);
-  digitalWrite(MOTOR_B_IN2, LOW);
-  analogWrite(MOTOR_B_PWM, 0);
-}
-
-// ============================================
-// Autonomous Behavior Functions
-// ============================================
-
-/**
- * Example autonomous behavior: Drive in a square pattern
- */
-void driveSquare() {
-  Serial.println("Starting Square Pattern");
-  
-  for (int i = 0; i < 4; i++) {
-    // Move forward
-    moveForward(DEFAULT_SPEED);
-    delay(2000);  // Drive for 2 seconds
-    
-    // Stop briefly
-    stopMotors();
-    delay(500);
-    
-    // Turn 90 degrees (adjust timing as needed)
-    turnLeft(TURN_SPEED);
-    delay(800);  // Adjust this value to get ~90 degree turn
-    
-    // Stop briefly
-    stopMotors();
-    delay(500);
-  }
-  
-  Serial.println("Square Pattern Complete");
-}
-
 // ============================================
 // Additional Functions (Add Your Own)
 // ============================================
 
-// TODO: Add your custom behaviors here
-// Examples:
-// - Figure-8 pattern
-// - Spiral motion
-// - Random walk
-// - Sensor-based behavior (if you added sensors)
+// TODO: Add your custom behaviors and functions here

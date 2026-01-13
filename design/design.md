@@ -2,7 +2,6 @@
 
 **Team Name:**  
 **Team Members:**  
-**Date:**  
 
 ---
 

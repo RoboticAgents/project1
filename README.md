@@ -2,11 +2,35 @@
 
 [![build](../../actions/workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
 
+## Table of Contents
+
+- [Timeline](#timeline)
+- [Overview](#overview)
+- [Learning Outcomes](#learning-outcomes)
+- [Team Structure](#team-structure)
+- [Project Phases and Weekly Tasks](#project-phases-and-weekly-tasks)
+  - [Week 1: Design and Planning](#week-1-design-and-planning-due-january-16-and-20)
+  - [Week 2: Building and Wiring](#week-2-building-and-wiring-due-january-27)
+  - [Week 3: Programming and Autonomy](#week-3-programming-and-autonomy-due-february-3)
+- [Technical Requirements](#technical-requirements)
+  - [Mechanical Requirements](#mechanical-requirements)
+  - [Electrical Requirements](#electrical-requirements)
+  - [Software Requirements](#software-requirements)
+  - [Optional Extensions](#optional-extensions)
+- [Baseline Hardware Kit](#baseline-hardware-kit)
+- [Assessment Rubric](#assessment-rubric)
+- [Team Evaluation Process](#team-evaluation-process)
+- [Resources](#resources)
+- [Submission Instructions](#submission-instructions)
+- [Academic Integrity](#academic-integrity)
+- [Getting Help](#getting-help)
+- [Safety Reminders](#safety-reminders)
+
 ## Timeline
 
 - **Assigned:** January 13, 2026
-- **Due:** February 3, 2026 (2:30 PM)
-- **Duration:** 3 weeks with weekly check-ins
+- **Final Product Due:** February 3, 2026 (2:30 PM)
+- **Duration:** 3 weeks with scaffolded deadlines
 
 ## Overview
 
@@ -24,22 +48,16 @@ By completing this project, you will be able to:
 
 1. **Design** a functional wheeled robot given real-world constraints (cost, time, materials)  
    *Fulfills Course Learning Outcome 2*
-
 2. **Apply** principles of locomotion, kinematics, and actuation to a physical system  
    *Fulfills Course Learning Outcomes 1, 4*
-
 3. **Integrate** mechanical, electrical, and software components into a working system  
    *Fulfills Course Learning Outcome 1*
-
 4. **Program** an Arduino-based controller to produce autonomous behavior  
    *Fulfills Course Learning Outcome 2*
-
 5. **Debug** hardware and software issues in an embedded system  
    *Fulfills Course Learning Outcome 2*
-
 6. **Collaborate** effectively in a small engineering team  
    *Fulfills Course Learning Outcome 2*
-
 7. **Document** design decisions, failures, and insights  
    *Fulfills Course Learning Outcome 2*
 
@@ -51,14 +69,14 @@ By completing this project, you will be able to:
 - **Collaboration:** Use your team's GitHub repository for all code and documentation
 - **Accountability:** Complete peer evaluations and self-reflections to ensure fair grading
 
-## Project Phases and Weekly Check-ins
+## Project Phases and Weekly Tasks
 
 ### Week 1: Design and Planning (Due January 16 and 20)
 
 **Deliverables:**
-- Robot design document (see `design/design.md`, **Due January 20**)
-- Component request list (see `design/components.md`, **Due January 16**)
-- Team contract (see `design/team-contract.md`, **Due January 16**)
+- Robot design document (see `design/design.md`, **Due January 20 by 2:30PM**)
+- Component request list (see `design/components.md`, **Due January 16 by 11:59PM**)
+- Team contract (see `design/team-contract.md`, **Due January 16 by 11:59PM**)
 
 **Tasks:**
 1. Research wheeled robot designs (differential drive, skid-steer, etc.)
@@ -105,9 +123,9 @@ By completing this project, you will be able to:
 6. Give demonstration to class on February 3rd
 
 **Final Demonstration (February 3 Lab and February 4 Class):**
-- Live demo of your robot performing autonomous behavior
+- Live demo of your robot performing autonomous behavior given during lab on February 3rd
 - During the demo each team must also cover design, challenges, and lessons learned
-- **Individual code reviews** during lab on February 3rd and class on February 4th (5 minutes per person)
+- **Individual code reviews** during remiander of lab on February 3rd and class on February 4th (~5 minutes per person)
 
 ## Technical Requirements
 
@@ -126,7 +144,6 @@ By completing this project, you will be able to:
 - **Power:** Separate power for motors
   - **Critical:** Motors MUST NOT be powered from Arduino 5V pin
   - All grounds must be connected (common ground)
-- **Safety:** Power switch to disconnect battery
 
 ### Software Requirements
 
@@ -154,10 +171,7 @@ Each team will receive the following components:
 ### Core Electronics
 - 1× Arduino Uno R3 (or compatible)
 - 1× USB cable
-- 1× Dual motor driver (TB6612FNG or L298N)
-- 2× DC gear motors (6V, with mounting brackets)
-- 2× Wheels (65–70 mm diameter)
-- 1× Ball caster or swivel caster
+- 1x [robot chassis kit](https://www.amazon.com/dp/B01LXY7CM3?ref=fed_asin_title)
 
 **Additional components may be requested in your design document, subject to instructor approval.**
 
@@ -235,7 +249,7 @@ After calculating your base score (Team Product + Code Review = up to 8 points),
 
 ### Peer and Self-Evaluation Form (Due with Final Submission)
 
-Each team member will complete a **combined peer and self-evaluation form** (Google Form) that includes:
+Each team member will complete a **peer and self-evaluation form** (Google Form) that includes:
 
 **Part 1: Peer Evaluation**
 
@@ -304,7 +318,7 @@ Submit via your team's GitHub repository:
 - Bring your robot to lab, fully charged and ready to demonstrate
 - Be prepared to explain your design choices and challenges
 - Each team will have 5 minutes to present + 2 minutes for Q&A
-- During the remainder of the lab on February 3rd and class on February 4th, each individual will have a 5 minute code review with the instructor where you will:
+- During the remainder of the lab on February 3rd and class on February 4th, each individual will have a ~5 minute code review with the instructor where you will:
   - Walk through your code contributions
   - Explain how motors and motor drivers work
   - Describe your wiring and power system

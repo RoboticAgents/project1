@@ -2,7 +2,6 @@
 
 **Team Name:**  
 **Team Members:**  
-**Date:**  
 
 ---
 
@@ -12,8 +11,6 @@ The following components are included in the standard kit and do **not** need to
 
 - [ ] 1× Arduino Uno R3
 - [ ] 1× USB cable
-- [ ] 1× Breadboard
-- [ ] 20× Jumper wires
 - [ ] 1x [robot chassis kit](https://www.amazon.com/dp/B01LXY7CM3?ref=fed_asin_title)
 
 ---
@@ -56,25 +53,17 @@ Do you have any special requests or needs? (e.g., access to laser cutter, 3D pri
 
 ---
 
-## Total Estimated Additional Cost
-
-**$________**
-
----
-
 ## Instructor Approval
 
 **Approved:** [ ] Yes  [ ] No  [ ] Approved with modifications
 
 **Comments:**
 
-**Instructor Signature:** ________________  **Date:** __________
-
 ---
 
 ## Notes
 
-- Component requests must be submitted by **January 16** for Week 2 delivery
+- Component requests must be submitted by **January 16, 11:59PM** for Week 2 delivery
 - Requests are subject to availability and budget constraints
 - If a requested component is not available, the instructor will suggest alternatives
 - You are encouraged to use materials from the lab to supplement the kit

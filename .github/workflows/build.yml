@@ -1,4 +1,4 @@
-name: Project Checks
+name: Project Documentation Checks
 
 on:
   push:

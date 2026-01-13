@@ -48,19 +48,14 @@ Describe your code structure, control strategy, timing/calibration approach, and
 
 ## Design Process
 
-### Initial Design vs. Final Implementation
-
-**What changed from your original design?**
-- 
-- 
-
-**Why did you make these changes?**
+### What changed from your original design? Why did you make these changes?
 - 
 - 
 
 ### Design Decisions
 
 **What were the most important design decisions you made?**
+
 1. 
 2. 
 3. 
@@ -72,16 +67,6 @@ Describe your code structure, control strategy, timing/calibration approach, and
 ---
 
 ## Challenges and Problem Solving
-
-### Biggest Technical Challenge
-
-**Challenge:**
-
-**How we approached it:**
-
-**Solution (or attempted solutions):**
-
-**What we learned:**
 
 ### Unexpected Problems
 
